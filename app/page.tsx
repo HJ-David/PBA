@@ -1,13 +1,21 @@
 export default function Home() {
+  const logoUrl =
+    "https://res.cloudinary.com/dcyh0tifc/image/upload/v1772835967/logo_vsgyac.png";
+
   return (
     <div className="min-h-screen bg-black text-white">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/40 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a
             href="#top"
-            className="text-sm font-semibold tracking-wide text-white"
+            className="flex items-center gap-3 text-sm font-semibold tracking-wide text-white"
           >
-            Page Backcountry Adventures
+            <img
+              src={logoUrl}
+              alt="Page Backcountry Adventures logo"
+              className="h-7 w-7 rounded-md bg-white/5 ring-1 ring-white/15"
+            />
+            <span>Page Backcountry Adventures</span>
           </a>
 
           <nav className="hidden items-center gap-6 text-sm text-white/80 sm:flex">
